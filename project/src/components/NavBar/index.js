@@ -1,13 +1,18 @@
 import React from "react";
 import './NavBar.css';
-import { Nav, Bars, NavMenu, NavLink, NavBtn, NavBtnLinkSignUp, NavBtnLinkLogIn } from "./NavBarElems";
+import logo from '../../assets/rinvest-logo.png';
+import { Nav, Bars, NavMenu, NavLink, NavBtn, NavBtnLinkSignUp, NavBtnLinkLogIn, NavLogoLink } from "./NavBarElems";
 
 const NavBar = () => {
     return (
         <div>
             <Nav>
+                <NavLogoLink>
+                        <img src={logo} style={{width: '180px'}}/>
+                </NavLogoLink>
                 <Bars />
                 <NavMenu>
+                    
                     <NavLink to="/">
                         Dashboard
                     </NavLink>

@@ -1,7 +1,17 @@
 .PortfolioScreen {
     text-align: center;
     position: relative;
-} 
+}
+
+.portfolio-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-container {
+    width: 1200px;
+}
+
 .welcome-text {
     font-size:40px;
     margin-top: 50px;

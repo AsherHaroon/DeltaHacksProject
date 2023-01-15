@@ -52,8 +52,14 @@
     font-size: 18px;
     background-color: #0050a5ff;
     font-weight: bold;
+    font-family: inherit;
     color: white;
 }
+
+.join-button-container:hover {
+    background-color: rgb(33, 110, 192);
+}
+
 .main-wrapper {
     display: flex;
     justify-content: center;

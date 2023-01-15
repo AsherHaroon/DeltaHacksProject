@@ -10,6 +10,7 @@ import jettoken from '../../assets/jettoken.jpg';
 import rentberry from '../../assets/rentberry.png';
 import startengine from '../../assets/startengine.jpg';
 import weatherflow from '../../assets/weatherflowcom.jpg';
+import { Link } from 'react-router-dom';
 
 
 const DashboardScreen = () => {
@@ -28,9 +29,11 @@ const DashboardScreen = () => {
                                 Come build your brand or help someone build theirs today!           
                             </div>
                             <div className="button-container">
-                                <button className="join-button-container">
-                                    Pitch Your Idea
-                                </button>
+                                <Link to={'create-post'}>
+                                    <button className="join-button-container">
+                                        Pitch Your Idea
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                         <div className="logo-container">
