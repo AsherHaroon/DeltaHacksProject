@@ -31,5 +31,7 @@ export const AuthContextProvider = ({ children }) => {
 }
 
 const USER_OBJ = {
-
+    name: "Saaeed Khan",
+    balance: 30000,
+    investments: []
 }

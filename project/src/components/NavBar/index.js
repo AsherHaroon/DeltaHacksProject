@@ -11,8 +11,8 @@ const NavBar = () => {
                     <NavLink to="/">
                         Dashboard
                     </NavLink>
-                    <NavLink to="/my-investments">
-                        My Investments
+                    <NavLink to="/portfolio">
+                        Portfolio
                     </NavLink>
                     <NavLink to="/create-post">
                         Pitch Your Idea

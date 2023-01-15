@@ -8,8 +8,8 @@ import DashboardScreen from './screens/DashboardScreen';
 import PitchScreen from './screens/PitchScreen';
 import './App.css';
 import NavBar from './components/NavBar';
-import MyInvestmentsScreen from './screens/MyInvestmentsScreen';
 import { useAuthContext } from './contexts/authContext';
+import PortfolioScreen from './screens/PortfolioScreen';
 
 const App = () => {
 
@@ -26,7 +26,7 @@ const App = () => {
         <NavBar />
         <Routes>
             <Route index element={<DashboardScreen />} />
-            <Route path='/my-investments' element={<MyInvestmentsScreen />} />
+            <Route path='/portfolio' element={<PortfolioScreen />} />
             <Route path='/create-post' element={<CreatePostScreen />} />
             <Route path={`/pitch/${sample}`} element={<PitchScreen />} />
         </Routes>
