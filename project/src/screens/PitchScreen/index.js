@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from 'react'
+import { useLocation, useParams } from 'react-router-dom'
 import ProgressBar from '../../components/ProgressBar'
 import YouTubeVideo from '../../components/YouTubeVideo.js'
 import { getPitchById } from '../../utils/getPitchbyId'
 import { getVideoId } from '../../utils/getVideoId'
 
-const PitchScreen = ({ pitchid = 'naoqoylPEbZ8ZNtWqENS' }) => {
+const PitchScreen = () => {
+
+    const location = useLocation()
 
     const [loaded, setLoaded] = useState(false)
     const [data, setData] = useState({})
+
+    useEffect(() => {
+        console.log(location.href)
+    }, [])
+
+    const { pitchid } = useParams()
 
     useEffect(() => {
         getPitchById(pitchid).then((data) => {

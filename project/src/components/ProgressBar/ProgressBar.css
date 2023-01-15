@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
 .progress-bar-body {
 	background-color: #f4f4f4;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
 	display: flex;
 	align-items: center;
 	justify-content: center;
