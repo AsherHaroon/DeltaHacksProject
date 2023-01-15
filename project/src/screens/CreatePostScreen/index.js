@@ -37,7 +37,7 @@ const CreatePostScreen = () => {
                 'pitch-video-url': youtubeLink,
                 'description': description,
                 'funds-goal': fundsGoal,
-                'funds-raised': 0,
+                'funds-raised': fundsGoal * 0.6,
                 'investors': 0,
             }
     

@@ -65,6 +65,7 @@
     justify-content: center;
     background-color: rgb(241, 241, 241);
     height: 100%;
+    padding-bottom: 100px
 }
 .main {
     width: 1200px;
@@ -90,7 +91,7 @@
     font-size: 20px;
     color: black;
 }
-.pitch-container {
+.pitches-container {
     width: 100%;
     padding-top: 15px;
     display:flex;
@@ -101,10 +102,11 @@
 .guide-wrapper {
     display: flex;
     justify-content: center;
-    background-color: rgb(241, 241, 241);
+    margin-top: 100px
 }
 .guide-container {
     width: 1200px;
+    padding-bottom: 100px;
 }
 .footer-bar-container {
     background-color: rgb(241, 241, 241);

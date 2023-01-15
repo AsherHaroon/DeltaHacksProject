@@ -51,7 +51,7 @@ const DashboardScreen = () => {
                         <div className="main-header-bottom-text">
                             Invest in the following:
                         </div>
-                        <div className="pitch-container">
+                        <div className="pitches-container">
                             {COMPANY_LIST.map((company, index) => (
                                 <PitchTab 
                                     key={index}
