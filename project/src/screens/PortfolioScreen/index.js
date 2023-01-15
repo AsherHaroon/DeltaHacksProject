@@ -17,6 +17,13 @@ const PortfolioScreen = () => {
             <p className="left-text">Company 1</p>
             <p className="right-text">You invested</p>
           </div>
+          <div className="investment-text">
+            <p>Your Watchlist:</p>
+          </div>
+          <div className="rounded-rectangle">
+            <p className="left-text">Company 1</p>
+            <p className="right-text">Raised</p>
+          </div>
         </div>
     )
 }
