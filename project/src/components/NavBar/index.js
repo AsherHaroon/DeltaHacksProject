@@ -19,7 +19,12 @@ const NavBar = () => {
                     </NavLink>
                 </NavMenu>
                 <div className="authentication-container">
-                    Logged in as {localStorage.getItem('name')}
+                    <div className="authentication-text-1">
+                        Logged in as 
+                    </div>
+                    <div className="authentication-text-2">
+                        {localStorage.getItem('name')}
+                    </div>
                 </div>
             </Nav>
         </div>

@@ -7,5 +7,7 @@ export const generateUser = async () => {
 }
 
 const USER_OBJ = {
-    "name": "Saaeed Khan"
+    "name": "Saaeed Khan",
+    "balance": 30000,
+    "investments": []
 }

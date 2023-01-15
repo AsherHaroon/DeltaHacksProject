@@ -1,0 +1,122 @@
+.pitch-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.pitch-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1200px;
+    height: 100vh;
+}
+
+.pitch-title {
+    font-size: 30px;
+    display: flex;
+    font-weight: 900;
+}
+
+.pitch-header-line {
+    color: black;
+    height: 0.5px;
+    width: 100%;
+}
+
+.column-containers {
+    display: flex;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.pitch-column-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.pitch-column-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pitch-contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid 0.5px grey;
+    padding: 10px;
+}
+
+.pitch-contact-contents {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.pitch-contact-email {
+}
+
+.pitch-embedded-video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pitch-description-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 10px;
+    height: 300px;
+}
+
+.pitch-description-header {
+    font-weight: 600;
+}
+
+.pitch-description-text {
+    color: rgb(83, 83, 83);
+    font-weight: 100;
+    background-color: tra;
+}
+
+.pitch-funds-raised-container {
+    background-color: white;
+    box-shadow: 3px 3px 1px #d1d1d1;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pitch-funds-raised-info {
+    display: flex;
+    justify-content: center;
+}
+
+.pitch-invest-button {
+    align-self: center;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #2c90fb;
+    font-size: 18px;
+    border-width: 0;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.pitch-invest-button:hover {
+    background-color: #48a1ff;
+    transition: ease-in-out 0.2s;
+}
+.pitch-invest-button:active {
+    background-color: #2c90fb;
+    box-shadow: 2px 2px 4px #888888;
+    transform: translateY(1px);
+    transition: ease-in-out 0.2s;
+}
