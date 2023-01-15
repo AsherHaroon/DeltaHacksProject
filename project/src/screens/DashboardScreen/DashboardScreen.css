@@ -71,7 +71,7 @@
 }
 
 .main-header-text {
-    padding-top: 15px;
+    padding-top: 100px;
     font-size: 50px;
     font-weight: bold;
     margin-right: 10px;
@@ -79,6 +79,7 @@
 }
 
 .main-header-bottom-text {
+    padding-top: 20px;
     padding-left: 15px;
     font-size: 20px;
     color: black;
@@ -98,4 +99,8 @@
 }
 .guide-container {
     width: 1200px;
+}
+.footer-bar-container {
+    background-color: rgb(241, 241, 241);
+    padding-top: 70px;
 }

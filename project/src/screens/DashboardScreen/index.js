@@ -67,7 +67,9 @@ const DashboardScreen = () => {
                     <InvestingGuide/>
                 </div>
             </div>
+            <div className='footer-bar-container'>
             <FooterBar/>
+            </div>
         </div>
     )
 }
