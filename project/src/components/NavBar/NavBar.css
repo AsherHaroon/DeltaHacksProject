@@ -1,0 +1,14 @@
+.authentication-container {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.authentication-text-1 {
+    color: rgb(185, 185, 185);
+    padding-right: 7px;
+}
+
+.authentication-text-2 {
+    font-weight: 600;
+}

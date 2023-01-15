@@ -4,6 +4,7 @@ import ProgressBar from '../../components/ProgressBar'
 import YouTubeVideo from '../../components/YouTubeVideo.js'
 import { getPitchById } from '../../utils/getPitchbyId'
 import { getVideoId } from '../../utils/getVideoId'
+import './PitchScreen.css'
 
 const PitchScreen = () => {
 
@@ -27,21 +28,48 @@ const PitchScreen = () => {
 
     if (loaded) {
         return (
-            <div className='portfolio-container'>
-                <div className='portfolio-title'>
-                    {data.name}
-                </div>
-                <div className='portfolio-embedded-video-container'>
-                    <YouTubeVideo videoId={getVideoId(data['pitch-video-url'])}/>
-                </div>
-                <div>
-                    {data.description}
-                </div>
-                <div className='portfolio-funds-raised-container'>
-                    <div>
-                        {data['funds-raised']} / {data['funds-goal']}
+            <div className='pitch-wrapper'>
+                <div className='pitch-container'>
+                    <div className='column-containers'>
+                        <div className='pitch-column-1'>
+                            <div className='pitch-title'>
+                                <div>{data['company-name']}</div>
+                            </div>
+                            <hr className='pitch-header-line'/>
+                            <div className='pitch-description-container'>
+                                <div className='pitch-description-header'>
+                                    Description
+                                </div>
+                                <div className='pitch-description-text'>
+                                    {data.description}
+                                </div>
+                            </div>
+                            <div className='pitch-funds-raised-container'>
+                                <div className='pitch-funds-raised-info'>
+                                    ${data['funds-raised']} / ${data['funds-goal']}
+                                </div>
+                                <ProgressBar progress={data['funds-raised']} total={data['funds-goal']}/>
+                            </div>
+                        </div>
+                        <div className='pitch-column-2'>
+                            <div className='pitch-embedded-video-container'>
+                                <YouTubeVideo videoId={getVideoId(data['pitch-video-url'])}/>
+                            </div>
+                            <div className='pitch-invest-container'>
+                                <button className='pitch-invest-button'>Invest Now</button>
+                            </div>
+                            <div className='pitch-contact-container'>
+                                <div className='pitch-contact-header'>
+                                    Contact Info
+                                </div>
+                                <div className='pitch-contact-contents'>
+                                    <div className='pitch-contact-email'>
+                                        Email: {data['contact-info'].email}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ProgressBar progress={data['funds-raised']} total={data['funds-goal']}/>
                 </div>
             </div>
         )
