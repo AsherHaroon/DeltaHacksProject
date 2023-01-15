@@ -13,7 +13,7 @@ const ProgressBar = ({progress = 40, total = 100}) => {
             opacity: 1,
             width: `${done * 100}%`
         }
-        
+
         setStyle(newStyle);
     }, 200);
     

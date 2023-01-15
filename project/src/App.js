@@ -26,9 +26,9 @@ const App = () => {
         <NavBar />
         <Routes>
             <Route index element={<DashboardScreen />} />
-            <Route path='/portfolio' element={<PortfolioScreen />} />
-            <Route path='/create-post' element={<CreatePostScreen />} />
-            <Route path={`/pitch/${sample}`} element={<PitchScreen />} />
+            <Route path='portfolio' element={<PortfolioScreen />} />
+            <Route path='create-post' element={<CreatePostScreen />} />
+            <Route path={`pitch/:pitchid`} element={<PitchScreen />} />
         </Routes>
       </BrowserRouter>
     )
