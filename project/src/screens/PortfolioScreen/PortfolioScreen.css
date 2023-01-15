@@ -1,0 +1,35 @@
+.PortfolioScreen {
+    text-align: center;
+    position: relative;
+} 
+.welcome-text {
+    font-size:40px;
+    margin-top: 50px;
+    text-align:center;
+} 
+.balance-container {
+    margin-top: 20px;
+    text-align:center;
+}
+.investment-text {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.rounded-rectangle {
+    width: 100%;
+    height: 100px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+.left-text {
+   margin-left: 10px;
+}
+  
+.right-text {
+   margin-right: 10px;
+}
